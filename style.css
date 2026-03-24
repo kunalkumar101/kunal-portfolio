@@ -140,7 +140,7 @@ body::before {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.35fr 0.95fr;
+  grid-template-columns: 1.28fr 0.92fr;
   gap: 24px;
   align-items: stretch;
   padding-top: 76px;
@@ -169,8 +169,8 @@ h2 {
 }
 
 h1 {
-  max-width: 12ch;
-  font-size: clamp(2.5rem, 4.8vw, 4.9rem);
+  max-width: 11.5ch;
+  font-size: clamp(2.3rem, 4.2vw, 4.35rem);
   font-weight: 800;
 }
 
@@ -203,7 +203,7 @@ p {
 }
 
 .hero-copy {
-  padding: 38px;
+  padding: 36px;
   border-radius: var(--radius-lg);
   background:
     linear-gradient(180deg, rgba(93, 169, 255, 0.05), transparent 38%),
@@ -211,9 +211,10 @@ p {
 }
 
 .hero-text {
-  max-width: 56ch;
-  margin-top: 18px;
-  font-size: 1rem;
+  max-width: 50ch;
+  margin-top: 16px;
+  font-size: 0.98rem;
+  line-height: 1.75;
 }
 
 .hero-actions,
@@ -225,7 +226,13 @@ p {
 }
 
 .hero-actions {
-  margin-top: 26px;
+  margin-top: 22px;
+  gap: 10px;
+}
+
+.hero-actions .button {
+  min-height: 46px;
+  padding: 0 18px;
 }
 
 .social-links {
@@ -581,7 +588,7 @@ p {
   }
 
   h1 {
-    font-size: clamp(2.1rem, 9vw, 3rem);
+    font-size: clamp(2rem, 8.2vw, 2.8rem);
   }
 
   .button {
